@@ -85,7 +85,7 @@ The option `force_grid_wrap = 0` is just to tell isort to only wrap imports that
 the `line_length` limit.
 
 Finally, isort should be told to wrap imports when they surpass _Black_'s default limit
-of 88 characters via `line_length = 88` as well as
+of 100 characters via `line_length = 100` as well as
 `ensure_newline_before_comments = True` to ensure spacing import sections with comments
 works the same as with _Black_.
 
@@ -210,7 +210,7 @@ mixed feelings about _Black_'s formatting style.
 #### Configuration
 
 ```
-max-line-length = 88
+max-line-length = 100
 ```
 
 #### Why those options above?
@@ -228,7 +228,7 @@ _Black_ formatting and have since been removed.
 
 ```ini
 [format]
-max-line-length = 88
+max-line-length = 100
 ```
 
 </details>
@@ -238,7 +238,7 @@ max-line-length = 88
 
 ```cfg
 [pylint]
-max-line-length = 88
+max-line-length = 100
 ```
 
 </details>
@@ -248,7 +248,7 @@ max-line-length = 88
 
 ```toml
 [tool.pylint.format]
-max-line-length = "88"
+max-line-length = "100"
 ```
 
 </details>
@@ -260,7 +260,7 @@ max-line-length = "88"
 #### Configuration
 
 ```
-max-line-length = 88
+max-line-length = 100
 ignore = E203
 ```
 
@@ -280,7 +280,7 @@ See
 ```cfg
 [pycodestyle]
 ignore = E203
-max_line_length = 88
+max_line_length = 100
 ```
 
 </details>
