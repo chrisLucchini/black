@@ -1556,7 +1556,7 @@ class StringSplitter(BaseStringSplitter, CustomSplitMapMixin):
             # --- Construct `next_leaf`
             next_leaf = Leaf(token.STRING, next_value)
             insert_str_child(next_leaf)
-            self._maybe_normalize_string_quotes(next_leaf)
+            # self._maybe_normalize_string_quotes(next_leaf)
 
             # --- Construct `next_line`
             next_line = line.clone()
@@ -1578,7 +1578,7 @@ class StringSplitter(BaseStringSplitter, CustomSplitMapMixin):
         # NOTE: I could not find a test case that verifies that the following
         # line is actually necessary, but it seems to be. Otherwise we risk
         # not normalizing the last substring, right?
-        self._maybe_normalize_string_quotes(rest_leaf)
+        # self._maybe_normalize_string_quotes(rest_leaf)
 
         last_line = line.clone()
         maybe_append_string_operators(last_line)
